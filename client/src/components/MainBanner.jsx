@@ -3,8 +3,10 @@ import React from 'react'
 const MainBanner = () => {
   return (
     <section>
-        <div className="bannerContianer min-h-80 border max-w-[1200px] mx-auto">
-
+        <div className="bannerContianer h-[420px]">
+          <div className="bannerImageContainer w-full h-full">
+            <img src="Winter.webp" alt="" className='h-full w-full' />
+          </div>
         </div>
     </section>
   )

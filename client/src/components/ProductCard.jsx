@@ -1,11 +1,10 @@
 import React from "react";
-import productimg from "../assets/product.webp";
 import { Link } from "react-router-dom";
-const ProductCard = ({tittle,price}) => {
+const ProductCard = ({tittle,price,image}) => {
   return (
-    <div className="productContainer border-2 border-black-900 max-w-[320px]  w-full ">
+    <div className="productContainer max-w-[320px] border w-full ">
       <div className="product-img-container w-full border min-h-[280px]">
-        <img src={productimg} className="" alt="" />
+        <img src={image} className="" alt="" />
       </div>
       <div className="product-content-container">
         <p>

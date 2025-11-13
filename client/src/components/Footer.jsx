@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-cyan-800 text-white">
-        <div className="max-w-[1200px] mx-auto flex justify-between py-10 px-4">
+    <footer className="bg-[var(--primary-color)] text-white">
+        <div className="container flex justify-between py-10 px-4">
       <div className="brandDetails flex flex-col gap-6">
         <div className="brandAddressContainer flex gap-3">
           <div className="icon">
