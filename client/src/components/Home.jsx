@@ -8,9 +8,13 @@ const Home = () => {
   return (
     <>
       <MainBanner />
-      <div className="container pro-flex-container my-[40px] flex flex-wrap gap-[32px]">
+      <div className="container pro-flex-container my-[40px] grid grid-cols-4 gap-[32px]">
         {mainProductsList.map((itme) => (
-          <ProductCard tittle={itme.title} price={itme.price} image={itme.thumbnail}/>
+          <ProductCard
+            tittle={itme.title}
+            price={itme.price}
+            image={itme.thumbnail}
+          />
         ))}
       </div>
       <Top4Product />
