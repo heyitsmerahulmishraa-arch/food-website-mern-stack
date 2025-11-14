@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 const ProductCard = ({tittle,price,image}) => {
   return (
-    <div className="productContainer max-w-[320px] border w-full ">
+    <div className="productContainer max-w-[280px] border w-full ">
       <div className="product-img-container w-full border min-h-[280px]">
         <img src={image} className="" alt="" />
       </div>
