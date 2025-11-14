@@ -2,18 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 const ProductCard = ({tittle,price,image}) => {
   return (
-<<<<<<< HEAD
-    <div className="productContainer max-w-[280px] border w-full ">
-      <div className="product-img-container w-full border min-h-[280px]">
-=======
-    <div className="productContainer max-w-[280px] shadow-xl w-full pb-[10px]">
+    <div className="productContainer max-w-[280px] shadow-xl w-full pb-2.5">
       <div className="product-img-container w-full  min-h-[280px]">
->>>>>>> 43a09d652c63cfa09d131753541cbef4c6b3f726
         <img src={image} className="" alt="" />
       </div>
       <div className="product-content-container">
-        <div className="main-content-container py-[15px] flex flex-col gap-[12px]">
-          <div className="pro-title-detils flex justify-between items-center text-[20px] px-[10px]">
+        <div className="main-content-container py-[15px] flex flex-col gap-3">
+          <div className="pro-title-detils flex justify-between items-center text-[20px] px-2.5">
             <p>
               <b>{tittle}</b>
             </p>
@@ -21,15 +16,15 @@ const ProductCard = ({tittle,price,image}) => {
               <b>4.1/5 ⭐</b>
             </p>
           </div>
-          <p className="px-[10px]">
+          <p className="px-2.5">
             ₹{price} -{" "}
             <span className="line-through">₹{Math.ceil(price * 2.2)}</span>
           </p>
         </div>
-        <div className="pro-btn-container flex justify-between gap-[8px] px-[10px] items-center text-[15px] whitespace-nowrap">
+        <div className="pro-btn-container flex justify-between gap-2 px-2.5 items-center text-[15px] whitespace-nowrap">
           <Link
             to={"/buynow"}
-            className="py-[8px] px-[22px]  bg-[var(--primary-color)] text-white font-bold"
+            className="py-2 px-[22px]  bg-(--primary-color) text-white font-bold"
           >
             Buy Now
           </Link>
@@ -37,7 +32,7 @@ const ProductCard = ({tittle,price,image}) => {
             onClick={() => {
               alert("your product added");
             }}
-            className="py-[8px] px-[22px]  font-bold bg-[var(--secondary-color)] text-white"
+            className="py-2 px-[22px]  font-bold bg-(--secondary-color) text-white"
           >
             Add To cart
           </Link>
