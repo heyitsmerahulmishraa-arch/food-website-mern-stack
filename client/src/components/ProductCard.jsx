@@ -2,7 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 const ProductCard = ({tittle,price,image}) => {
   return (
+<<<<<<< HEAD
     <div className="productContainer max-w-[280px] shadow-xl w-full pb-2.5">
+=======
+    <div className="productContainer max-w-[280px] shadow-xl w-full pb-[10px]">
+>>>>>>> 814a6dcbbc046a32340baa4e0e056a76f740efca
       <div className="product-img-container w-full  min-h-[280px]">
         <img src={image} className="" alt="" />
       </div>
